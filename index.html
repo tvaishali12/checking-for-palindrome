@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // algo
+    // step-1 Create a function to check whether the given input is palindrome or not.
+    // step-2 Run a loop to reverse the input.
+    // step-3 Take a variable to hold the data.
+    // step-4 Create a condition to check whether the holding data is matching with the given
+    //input  or not
+    //step-5 If it is matcing it's a palindrome else not a palindrome
+
+    const checkPalindrome = (input) => {
+      let storeValue = "";
+      for (var i = input.length - 1; i >= 0; i--) {
+        var chr = input[i];
+        storeValue += chr;
+      }
+      if (storeValue == input) {
+        console.log("Palindrome");
+      } else {
+        console.log("Not a palindrome");
+      }
+    };
+    checkPalindrome("level");
+  </script>
+</html>
